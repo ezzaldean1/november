@@ -13,11 +13,11 @@ client.on('ready', () => {
   console.log(' Mob2 Bot Is Online')
   console.log('---------------')
   client.user.setStatus("Online")
-    client.user.setActivity(" Type shelp",{type: 'WATCHING'})
+    client.user.setActivity(" Type -help",{type: 'WATCHING'})
 	
 });
 	
-            var prefix = "s" ;
+            var prefix = "-" ;
 	
 	
 	/*
@@ -31,7 +31,7 @@ npm install queue
 */
 client.on('message', msg => {
 
-    if (msg.content == 'splay') {
+    if (msg.content == '-play') {
         if (msg.member.voiceChannel) {
 
      if (msg.member.voiceChannel.joinable) {
@@ -232,8 +232,8 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 
-const adminprefix = "tvip";//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-const devs = ['454400689133715477'];//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+const adminprefix = "-";//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+const devs = ['411989532112715786'];//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 client.on('message', message => {//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
   var argresult = message.content.split(` `).slice(1).join(' ');//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
     if (!devs.includes(message.author.id)) return;//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
